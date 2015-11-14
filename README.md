@@ -8,6 +8,8 @@ Browse the list of games below based on age. If you're interested in knowing the
 
 Educational gaming is right now (circa 2015) a newly re-emerging industry. The industry now knows that games can develop and evaluate sound, 21st-century skills (sometimes things that are difficult or impossible to teach in classic education).
 
+In fact, it can go as far as to claim (rightfully) that there is deep learning in mainstream games like World of Warcraft and Minecraft. This site isn't about finding the learning in games; it's about games that are built *for* learning.
+
 Not convinced? For more information, check out these awesome classes from MIT (edX):
 
 - [Introduction to Game Design](https://www.edx.org/course/introduction-game-design-mitx-11-126x): the fundamentals of creating solid, fun games. Necessary to make non-boring educational games.
