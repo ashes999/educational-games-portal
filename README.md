@@ -25,6 +25,7 @@ Grouped by approximate age. Programming skills are useful because they teach pro
 
 ## Grades 6-9 (age 11-14)
 - [Argubot Academy EDU](https://www.glasslabgames.org/games/AA-1): decide how to build a futuristic city on mars, based on claims and evidence for each choice. Teaches how to match evidences to claims, identifying, evaluating, and critiquing arguments. Free, iPad, [educators guide](https://s3-us-west-1.amazonaws.com/playfully-games/AA-1/brochures/AAEDU+brochure.pdf).
+- [Digital Compass](https://www.digitalcompass.org/): An animated choose-your-own-path interactive gaming planform about making (and living with) choices, empty, and evaluating options. Free for web/mobile. [Educator's guide](https://d2e111jq13me73.cloudfront.net/sites/default/files/uploads/landing_pages/educator_guide_093015.pdf)
 - [Moonbase Alpha](http://www.nasa.gov/offices/education/programs/national/ltp/games/moonbasealpha/index.html): a 3d game by NASA about building and sustaining a base on the moon. Focuses on STEM concepts like energy, gravity, and engineering. Free, PC,  [educators guide](http://www.nasa.gov/pdf/526940main_Moonbase_Alpha_Educator_Guide_v1.pdf).
 - [Ratio Rancher](https://www.glasslabgames.org/games/PRIMA): strategy/puzzle game teaching ratios and proportionality. [Trailer](https://www.youtube.com/watch?v=YmB7HZzaGWs)
  
