@@ -11,9 +11,10 @@ Educational gaming is right now (circa 2015) a newly re-emerging industry. For m
 # Games
 Grouped by approximate age. Programming skills are useful because they teach programming, design, critical thinking, debugging/troubleshooting, and other 21st-century type skills.
 
-## 7-10
-- [LightBot](https://lightbot.com/hocflash.html): give the robot instructions (move, turn, jump) to navigate to the blue tiles and light them up. Teaches simple programming and debugging/troubleshooting. The free version covers the first 20 levels.
+## Grades 2-5 (age 7-10)
 - [Gamestar Mechanic](https://gamestarmechanic.com/): teaches game design and programming concepts through a visual interface, starting with "fix this broken level." The free version includes one quest; paid version includes several more.
+- [LightBot](https://lightbot.com/hocflash.html): give the robot instructions (move, turn, jump) to navigate to the blue tiles and light them up. Teaches simple programming and debugging/troubleshooting. The free version covers the first 20 levels.
 
-## 11-14
+## Grades 6-9 (age 11-14)
+- [Argubot Academy EDU](https://www.glasslabgames.org/games/AA-1): decide how to build a futuristic city on mars, based on claims and evidence for each choice. Teaches how to match evidences to claims, identifying, evaluating, and critiquing arguments. Free.
 - [Moonbase Alpha](http://www.nasa.gov/offices/education/programs/national/ltp/games/moonbasealpha/index.html): a 3d game by NASA about building and sustaining a base on the moon. Focuses on STEM concepts like energy, gravity, and engineering. Available for free on Steam; see [educators guide](http://www.nasa.gov/pdf/526940main_Moonbase_Alpha_Educator_Guide_v1.pdf).
