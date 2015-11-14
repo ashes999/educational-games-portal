@@ -13,4 +13,7 @@ Grouped by approximate age. Programming skills are useful because they teach pro
 
 ## 7-10
 - [LightBot](https://lightbot.com/hocflash.html): give the robot instructions (move, turn, jump) to navigate to the blue tiles and light them up. Teaches simple programming and debugging/troubleshooting. The free version covers the first 20 levels.
-- [Gamestar Mechanic](https://gamestarmechanic.com/): teaches game design and programming concepts through a visual interface, starting with "fix this broken level." Free version includes one quest; paid version includes several more.
+- [Gamestar Mechanic](https://gamestarmechanic.com/): teaches game design and programming concepts through a visual interface, starting with "fix this broken level." The free version includes one quest; paid version includes several more.
+
+## 11-14
+- [Moonbase Alpha](http://www.nasa.gov/offices/education/programs/national/ltp/games/moonbasealpha/index.html): a 3d game by NASA about building and sustaining a base on the moon. Focuses on STEM concepts like energy, gravity, and engineering. Available for free on Steam; see [educators guide](http://www.nasa.gov/pdf/526940main_Moonbase_Alpha_Educator_Guide_v1.pdf).
