@@ -9,5 +9,8 @@ Educational gaming is right now (circa 2015) a newly re-emerging industry. For m
 - [Implementation and Evaluation of Educational Technology](https://www.edx.org/course/implementation-evaluation-educational-mitx-11-133x): how to best integrate educational technology into your class or learning environment.
 
 # Games
+Grouped by approximate age. Programming skills are useful because they teach programming, design, critical thinking, debugging/troubleshooting, and other 21st-century type skills.
+
 ## 7-10
-- [LightBot](https://lightbot.com/hocflash.html): give the robot instructions (move, turn, jump) to navigate to the blue tiles and light them up. Teaches simple programming and debugging/troubleshooting.
+- [LightBot](https://lightbot.com/hocflash.html): give the robot instructions (move, turn, jump) to navigate to the blue tiles and light them up. Teaches simple programming and debugging/troubleshooting. The free version covers the first 20 levels.
+- [Gamestar Mechanic](https://www.edx.org/course/implementation-evaluation-educational-mitx-11-133x): teaches game design and programming concepts through a visual interface, starting with "fix this broken level." Free version includes one quest; paid version includes several more.
