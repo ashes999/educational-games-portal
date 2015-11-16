@@ -11,7 +11,9 @@ angular.module("app").factory("gamesRepository", [function() {
           "grades": "6-9",
           "platforms": ["iPhone"],
           "educatorsGuide": "https://s3-us-west-1.amazonaws.com/playfully-games/AA-1/brochures/AAEDU+brochure.pdf",
-          "dateAdded": "2015-11-15"
+          "dateAdded": "2015-11-15",
+          "titleImage": "argubot-academy-title.jpg",
+          "screenshots": []
         },
         {
           "name": "Digital Compass",
@@ -20,7 +22,9 @@ angular.module("app").factory("gamesRepository", [function() {
           "grades": "6-9",
           "platforms": ["web", "iPhone", "android"],
           "educatorsGuide": "https://d2e111jq13me73.cloudfront.net/sites/default/files/uploads/landing_pages/educator_guide_093015.pdf",
-          "dateAdded": "2015-11-15"
+          "dateAdded": "2015-11-15",
+          "titleImage": "digital-compass-title.jpg",
+          "screenshots": []
         },
         {
 	        "name": "Gamestar Mechanic",
@@ -28,7 +32,9 @@ angular.module("app").factory("gamesRepository", [function() {
 	        "url": "https://gamestarmechanic.com/",
           "platforms": ["web"],
           "grades": "2-5",
-          "dateAdded": "2015-11-15"
+          "dateAdded": "2015-11-15",
+          "titleImage": "gamestar-mechanic-title.jpg",
+          "screenshots": []
         },
         {
           "name": "Lightbot",
@@ -36,7 +42,9 @@ angular.module("app").factory("gamesRepository", [function() {
           "url": "https://lightbot.com/hocflash.html",
           "platforms": ["web"],
           "grades": "2-5",
-          "dateAdded": "2015-11-15"
+          "dateAdded": "2015-11-15",
+          "titleImage": "lightbot-title.jpg",
+          "screenshots": []
         },
         {
           "name": "Moonbase Alpha",
@@ -46,7 +54,9 @@ angular.module("app").factory("gamesRepository", [function() {
           "platforms": ["windows"],
           "educatorsGuide": "http://www.nasa.gov/pdf/526940main_Moonbase_Alpha_Educator_Guide_v1.pdf",
           "trailer": "https://www.youtube.com/watch?v=nis2t9EubBs",
-          "dateAdded": "2015-11-15"
+          "dateAdded": "2015-11-15",
+          "titleImage": "moonbase-alpha-title.jpg",
+          "screenshots": []
         },
         {
           "name": "Ratio Rancher",
@@ -55,7 +65,9 @@ angular.module("app").factory("gamesRepository", [function() {
           "grades": "6-12",
           "platforms": ["web"],
           "trailer": "https://www.youtube.com/watch?v=YmB7HZzaGWs",
-          "dateAdded": "2015-11-15"
+          "dateAdded": "2015-11-15",
+          "titleImage": "ratio-rancher-title.jpg",
+          "screenshots": []
         }
       ];
     }
