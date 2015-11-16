@@ -1,19 +1,72 @@
 <html ng-app="app">
 
-<head>
-    <title>Educational Games Portal</title>
+  <head>
+      <title>Educational Games Portal</title>
 
-    <script src="lib/angular-1.4.7.js"></script>
+      <!-- bootstrap and jQuery -->
+      <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 
-    <script type='text/javascript'>
-      var app = angular.module('app', []);
-    </script>
-    <script src="src/app.js"></script>
-    <script src="src/gamesRepository.js"></script>
-</head>
+      <!-- angular and app -->
+      <script src="lib/angular-1.4.7.js"></script>
+      <script type='text/javascript'>
+        var app = angular.module('app', []);
+      </script>
+      <script src="src/app.js"></script>
+      <script src="src/gamesRepository.js"></script>
+  </head>
 
-<body>
-  <div ng-controller="appController"></div>
-</body>
+  <body>
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Project name</h3>
+      </div>
+
+      <div class="coreContent" ng-controller="appController">
+        <div class="jumbotron">
+          <h1>Jumbotron heading</h1>
+          <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+        </div>
+
+        <div class="row marketing">
+          <div class="col-lg-6">
+            <h4>Subheading</h4>
+            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+            <h4>Subheading</h4>
+            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+            <h4>Subheading</h4>
+            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          </div>
+
+          <div class="col-lg-6">
+            <h4>Subheading</h4>
+            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+            <h4>Subheading</h4>
+            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+            <h4>Subheading</h4>
+            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <p>Copyright &copy; Ashiq Alibhai, 2015. All games are under copyright of their respective owners.</p>
+        </footer>
+      </div>
+
+    </div> <!-- /container -->
+  </body>
 
 </html>
