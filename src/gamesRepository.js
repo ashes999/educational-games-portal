@@ -6,7 +6,7 @@ angular.module("app").factory("gamesRepository", [function() {
       return [
         {
           "name": "Argubot Academy EDU",
-          "description": "decide how to build a futuristic city on mars, based on claims and evidence for each choice. Teaches how to match evidences to claims, identifying, evaluating, and critiquing arguments.",
+          "description": "Decide how to build a futuristic city on mars, based on claims and evidence for each choice. Teaches how to match evidences to claims, identifying, evaluating, and critiquing arguments.",
           "url": "https://www.glasslabgames.org/games/AA-1",
           "grades": "6-9",
           "platforms": ["iPhone"],
@@ -28,7 +28,7 @@ angular.module("app").factory("gamesRepository", [function() {
         },
         {
 	        "name": "Gamestar Mechanic",
-	        "description": "teaches game design and programming concepts through a visual interface, starting with 'fix this broken level.' The free version includes one quest; paid version includes several more.",
+	        "description": "Teaches game design and programming concepts through a visual interface, starting with 'fix this broken level.' The free version includes one quest; paid version includes several more.",
 	        "url": "https://gamestarmechanic.com/",
           "platforms": ["web"],
           "grades": "2-5",
@@ -38,7 +38,7 @@ angular.module("app").factory("gamesRepository", [function() {
         },
         {
           "name": "Lightbot",
-          "description": "give the robot instructions (move, turn, jump) to navigate to the blue tiles and light them up. Teaches simple programming and debugging/troubleshooting. The free version covers the first 20 levels.",
+          "description": "Give the robot instructions (move, turn, jump) to navigate to the blue tiles and light them up. Teaches simple programming and debugging/troubleshooting. The free version covers the first 20 levels.",
           "url": "https://lightbot.com/hocflash.html",
           "platforms": ["web"],
           "grades": "2-5",
@@ -48,7 +48,7 @@ angular.module("app").factory("gamesRepository", [function() {
         },
         {
           "name": "Moonbase Alpha",
-          "description": "a 3d game by NASA about building and sustaining a base on the moon. Focuses on STEM concepts like energy, gravity, and engineering.",
+          "description": "A 3d game by NASA about building and sustaining a base on the moon. Focuses on STEM concepts like energy, gravity, and engineering.",
           "url": "http://www.nasa.gov/offices/education/programs/national/ltp/games/moonbasealpha/index.html",
           "grades": "6-9",
           "platforms": ["windows"],
@@ -60,7 +60,7 @@ angular.module("app").factory("gamesRepository", [function() {
         },
         {
           "name": "Ratio Rancher",
-          "description": "strategy/puzzle game teaching ratios and proportionality.",
+          "description": "Strategy/puzzle game teaching ratios and proportionality.",
           "url": "https://www.glasslabgames.org/games/PRIMA",
           "grades": "6-12",
           "platforms": ["web"],
