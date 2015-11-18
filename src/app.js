@@ -54,7 +54,8 @@ function ($scope, repo) {
     });
   }
 
-  // http://stackoverflow.com/a/22735761/210780
+  // Fitler games into two columns
+  // From: http://stackoverflow.com/a/22735761/210780
   $scope.colFilter = function(col) {
     var count = 0;
     // we hold onto count here, because $filter doesn't
@@ -65,6 +66,12 @@ function ($scope, repo) {
             return val;
         }
     }
+  }
+
+  $scope.searchFilter = function(game) {
+    return $scope.search == null ||
+      game.name.toUpperCase().indexOf($scope.search.toUpperCase()) > -1 ||
+      game.description.toUpperCase().indexOf($scope.search.toUpperCase()) > -1;
   }
 
 }]);
