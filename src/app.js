@@ -27,6 +27,10 @@ function ($scope, repo) {
   this.filterGames = function() {
     var gradeFilter = Number($scope.gradeFilter) || null;
     var platformFilter = $scope.platformFilter || null;
+    var search = $scope.search || null;
+    if (search != null) {
+      search = search.toUpperCase();
+    }
 
     var games = $scope.allGames;
     $scope.games = games.filter(function(game) {
@@ -49,6 +53,11 @@ function ($scope, repo) {
         return game.platforms.indexOf(platformFilter) > -1;
       }
 
+      if (search != null) {
+        return game.name.toUpperCase().indexOf(search.toUpperCase()) > -1 ||
+          game.description.toUpperCase().indexOf(search.toUpperCase()) > -1;
+      }
+
       // No filters? Not filtered out? It's legit.
       return true;
     });
@@ -66,12 +75,6 @@ function ($scope, repo) {
             return val;
         }
     }
-  }
-
-  $scope.searchFilter = function(game) {
-    return $scope.search == null ||
-      game.name.toUpperCase().indexOf($scope.search.toUpperCase()) > -1 ||
-      game.description.toUpperCase().indexOf($scope.search.toUpperCase()) > -1;
   }
 
 }]);

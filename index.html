@@ -39,7 +39,7 @@
           </div>
 
           <div class="nav nav-pulls pull-right" style="margin-right: 20px;">
-            Search: <input type="text" ng-model="search" />
+            Search: <input type="text" ng-model="search" ng-change="controller.filterGames()" />
           </div>
         </nav>
         <h3 class="text-muted">Project name</h3>
@@ -54,14 +54,14 @@
 
           <div class="row marketing">
             <div class="col-lg-6">
-              <div ng-repeat="game in games | filter: colFilter(0) | filter:searchFilter">
+              <div ng-repeat="game in games | filter: colFilter(0)">
                 <h4 ng-click="controller.selectGame(game)">{{game.name}}</h4>
                 <p>{{game.description}} [<a href="#" ng-click="controller.selectGame(game)">Details</a>]</h4></p>
               </div>
             </div>
 
             <div class="col-lg-6">
-              <div ng-repeat="game in games | filter: colFilter(1)  | filter:searchFilter">
+              <div ng-repeat="game in games | filter: colFilter(1)">
                 <h4 ng-click="controller.selectGame(game)">{{game.name}}</h4>
                 <p>{{game.description}} [<a href="#" ng-click="controller.selectGame(game)">Details</a>]</h4></p>
               </div>
