@@ -61,7 +61,7 @@
           <p>URL: <a href="{{selectedGame.url}}">{{selectedGame.url}}</a>
           <p>Platforms:
             <ul>
-              <li ng-repeat="platform in selectedGame.platforms">{{platform}}</li>
+              <li ng-repeat="platform in selectedGame.platforms | orderBy: platform">{{platform}}</li>
             </ul>
           <p>For grade(s) {{selectedGame.grades}}</p>
           <p>[<a href="#" ng-click="controller.selectNone()">Back</a>]</p>
