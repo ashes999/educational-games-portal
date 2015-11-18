@@ -26,6 +26,15 @@
             <li role="presentation" ng-class='{active: currentTab == "home"}'><a href="#" ng-click="currentTab = 'home'">Home</a></li>
             <li role="presentation" ng-class='{active: currentTab == "about"}'><a href="#" ng-click="currentTab = 'about'">About</a></li>
           </ul>
+          <div class="nav nav-pulls pull-right" style="margin-right: 20px;">
+            Grade:
+              <input type="text" size="2" ng-model="minGrade" ng-change="controller.filterGames()">
+              to
+              <input type="text" size="2" ng-model="maxGrade" ng-change="controller.filterGames()">
+              <br />
+
+            Platforms: <select ng-model="platformFilter" ng-change="controller.filterGames()"><option>Web</option><option>Android</option></select>
+          </div>
         </nav>
         <h3 class="text-muted">Project name</h3>
       </div>
@@ -39,7 +48,7 @@
 
           <div class="row marketing">
             <div class="col-lg-6">
-              <div ng-repeat="game in firstHalfGames">
+              <div ng-repeat="game in games">
                 <h4 ng-click="controller.selectGame(game)">{{game.name}}</h4>
                 <p>{{game.description}} [<a href="#" ng-click="controller.selectGame(game)">Details</a>]</h4></p>
               </div>
