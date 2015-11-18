@@ -6,11 +6,11 @@ function ($scope, repo) {
   var allGames = repo.getData();
 
   $scope.games = allGames;
-  $scope.firstGame = allGames.shift();
-  var midpoint = Math.ceil(allGames.length / 2);
-  $scope.firstHalfGames = allGames.slice(0, midpoint);
-  $scope.secondHalfGames = allGames.slice(midpoint, allGames.length);
-  $scope.selectedGame = null;
+  //$scope.firstGame = allGames.shift();
+  //var midpoint = Math.ceil(allGames.length / 2);
+  //$scope.firstHalfGames = allGames.slice(0, midpoint);
+  //$scope.secondHalfGames = allGames.slice(midpoint, allGames.length);
+  //$scope.selectedGame = null;
 
   this.selectGame = function(game) {
     $scope.selectedGame = game;
@@ -33,4 +33,18 @@ function ($scope, repo) {
     var platformFilter = $scope.platformFilter || null;
     console.log("From " + minGrade + " to " + maxGrade + " p=" + platformFilter);
   }
+
+  // http://stackoverflow.com/a/22735761/210780
+  $scope.colFilter = function(col) {
+    var count = 0;
+    // we hold onto count here, because $filter doesn't
+    // tell us the position of `val` in the array
+    return function(val) {
+        count++;
+        if ((count-1) % 2 === col) {
+            return val;
+        }
+    }
+  }
+  
 }]);
