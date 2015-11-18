@@ -57,6 +57,7 @@
         <div ng-show="selectedGame != null">
           <!-- TODO: add bootstrap markup -->
           <h1>{{selectedGame.name}}</h1>
+          <img ng-src="images/{{selectedGame.titleImage}}" />
           <p>{{selectedGame.description}}</p>
           <p>URL: <a href="{{selectedGame.url}}">{{selectedGame.url}}</a>
           <p>Platforms:
