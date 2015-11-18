@@ -5,12 +5,9 @@ function ($scope, repo) {
   $scope.currentTab = 'home';
   var allGames = repo.getData();
 
+  $scope.allGames = allGames;
   $scope.games = allGames;
-  //$scope.firstGame = allGames.shift();
-  //var midpoint = Math.ceil(allGames.length / 2);
-  //$scope.firstHalfGames = allGames.slice(0, midpoint);
-  //$scope.secondHalfGames = allGames.slice(midpoint, allGames.length);
-  //$scope.selectedGame = null;
+  $scope.platforms = ['all', 'web', 'ios', 'android', 'windows']
 
   this.selectGame = function(game) {
     $scope.selectedGame = game;
@@ -28,10 +25,33 @@ function ($scope, repo) {
   }
 
   this.filterGames = function() {
-    var minGrade = $scope.minGrade || null;
-    var maxGrade = $scope.maxGrade || null;
+    var gradeFilter = Number($scope.gradeFilter) || null;
     var platformFilter = $scope.platformFilter || null;
-    console.log("From " + minGrade + " to " + maxGrade + " p=" + platformFilter);
+
+    var games = $scope.allGames;
+    $scope.games = games.filter(function(game) {
+      // Look at the desired grade. Actual grade could be a range or a number.
+      // If we're a string range (eg. a-b), treat it as min=a, max=b (inclusive)
+      // If we're a number, treat it as min=a, max=a (inclusive)
+      var index = game.grades.indexOf('-');
+      if (index > -1) {
+        game.minGrade = Number(game.grades.substr(0, index));
+        game.maxGrade = Number(game.grades.substr(index + 1, game.grades.length));
+      } else {
+        game.minGrade = game.maxGrade = Number(game.grades);
+      }
+
+      if (gradeFilter != null) {
+        return gradeFilter >= game.minGrade && gradeFilter <= game.maxGrade;
+      }
+
+      if (platformFilter != null && platformFilter != 'all') {
+        return game.platforms.indexOf(platformFilter) > -1;
+      }
+
+      // No filters? Not filtered out? It's legit.
+      return true;
+    });
   }
 
   // http://stackoverflow.com/a/22735761/210780
@@ -46,5 +66,5 @@ function ($scope, repo) {
         }
     }
   }
-  
+
 }]);

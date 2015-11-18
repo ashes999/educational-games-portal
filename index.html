@@ -28,12 +28,12 @@
           </ul>
           <div class="nav nav-pulls pull-right" style="margin-right: 20px;">
             Grade:
-              <input type="text" size="2" ng-model="minGrade" ng-change="controller.filterGames()">
-              to
-              <input type="text" size="2" ng-model="maxGrade" ng-change="controller.filterGames()">
+              <input type="text" size="2" ng-model="gradeFilter" ng-change="controller.filterGames()">
               <br />
 
-            Platforms: <select ng-model="platformFilter" ng-change="controller.filterGames()"><option>Web</option><option>Android</option></select>
+            Platform: <select ng-model="platformFilter" ng-change="controller.filterGames()">
+              <option ng-repeat="platform in platforms">{{platform}}</option>
+            </select>
           </div>
         </nav>
         <h3 class="text-muted">Project name</h3>

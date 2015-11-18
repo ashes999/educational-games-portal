@@ -20,7 +20,7 @@ angular.module("app").factory("gamesRepository", [function() {
           "description": "An animated choose-your-own-path interactive gaming planform about making (and living with) choices, empty, and evaluating options",
           "url": "https://www.digitalcompass.org/",
           "grades": "6-9",
-          "platforms": ["web", "iPhone", "android"],
+          "platforms": ["web", "ios", "android"],
           "educatorsGuide": "https://d2e111jq13me73.cloudfront.net/sites/default/files/uploads/landing_pages/educator_guide_093015.pdf",
           "dateAdded": "2015-11-15",
           "titleImage": "digital-compass-title.jpg",
