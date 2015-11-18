@@ -13,9 +13,16 @@ function ($scope, repo) {
 
   this.selectGame = function(game) {
     $scope.selectedGame = game;
+    if (game != null) {
+      $scope.selectedImage = game.titleImage;
+    }
   }
 
   this.selectNone = function() {
     this.selectGame(null);
+  }
+
+  this.selectImage = function(image) {
+    $scope.selectedImage = image;
   }
 }]);

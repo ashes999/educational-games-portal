@@ -57,9 +57,13 @@
         <div ng-show="selectedGame != null">
           <!-- TODO: add bootstrap markup -->
           <h1>{{selectedGame.name}}</h1>
-          <img ng-src="images/{{selectedGame.titleImage}}" />
+          <p>Click on an image to view a bigger version</p>
+          <img ng-src="images/{{selectedImage}}" width="540" height="333" />
           <div class="row"><div class="col-lg-12">
-            <img ng-repeat="screenshot in selectedGame.screenshots.concat(selectedGame.titleImage)" ng-src="images/{{screenshot}}" width="320" height="180" />
+            <img
+              ng-repeat="screenshot in selectedGame.screenshots.concat(selectedGame.titleImage)"
+              ng-src="images/{{screenshot}}" ng-click="controller.selectImage(screenshot)"
+              width="320" height="180" />
           </div></div>
           <p>{{selectedGame.description}}</p>
           <p>URL: <a href="{{selectedGame.url}}">{{selectedGame.url}}</a>
