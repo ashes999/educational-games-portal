@@ -44,7 +44,7 @@ angular.module("app").factory("gamesRepository", [function() {
           "grades": "2-5",
           "dateAdded": "2015-11-15",
           "titleImage": "lightbot-title.jpg",
-          "screenshots": []
+          "screenshots": ['lightbot/screenshot-1.png', 'lightbot/screenshot-2.jpg']
         },
         {
           "name": "Moonbase Alpha",
