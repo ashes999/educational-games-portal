@@ -34,21 +34,21 @@
         <div ng-show="selectedGame == null">
           <div class="jumbotron">
             <h1 ng-click="controller.selectGame(firstGame)">{{firstGame.name}}</h1>
-            <p class="lead">{{firstGame.description}}</p>
+            <p class="lead">{{firstGame.description}} [<a href="#" ng-click="controller.selectGame(firstGame)">Details</a>]</p>
           </div>
 
           <div class="row marketing">
             <div class="col-lg-6">
               <div ng-repeat="game in firstHalfGames">
                 <h4 ng-click="controller.selectGame(game)">{{game.name}}</h4>
-                <p>{{game.description}}</p>
+                <p>{{game.description}} [<a href="#" ng-click="controller.selectGame(game)">Details</a>]</h4></p>
               </div>
             </div>
 
             <div class="col-lg-6">
               <div ng-repeat="game in secondHalfGames">
                 <h4 ng-click="controller.selectGame(game)">{{game.name}}</h4>
-                <p>{{game.description}}</p>
+                <p>{{game.description}} [<a href="#" ng-click="controller.selectGame(game)">Details</a>]</h4></p>
               </div>
             </div>
           </div>
