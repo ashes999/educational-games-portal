@@ -9,4 +9,9 @@ function ($scope, repo) {
   var midpoint = Math.ceil(allGames.length / 2);
   $scope.firstHalfGames = allGames.slice(0, midpoint);
   $scope.secondHalfGames = allGames.slice(midpoint, allGames.length);
+  $scope.selectedGame = null;
+
+  this.selectGame = function(game) {
+    $scope.selectedGame = game;
+  }
 }]);
