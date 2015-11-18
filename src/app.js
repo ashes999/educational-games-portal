@@ -14,4 +14,8 @@ function ($scope, repo) {
   this.selectGame = function(game) {
     $scope.selectedGame = game;
   }
+
+  this.selectNone = function() {
+    this.selectGame(null);
+  }
 }]);

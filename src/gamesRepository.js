@@ -3,7 +3,7 @@
 angular.module("app").factory("gamesRepository", [function() {
   return {
     getData: function() {
-      return [
+      var toReturn = [
         {
           "name": "Argubot Academy EDU",
           "description": "Decide how to build a futuristic city on mars, based on claims and evidence for each choice. Teaches how to match evidences to claims, identifying, evaluating, and critiquing arguments.",
@@ -40,7 +40,7 @@ angular.module("app").factory("gamesRepository", [function() {
           "name": "Lightbot",
           "description": "Give the robot instructions (move, turn, jump) to navigate to the blue tiles and light them up. Teaches simple programming and debugging/troubleshooting. The free version covers the first 20 levels.",
           "url": "https://lightbot.com/hocflash.html",
-          "platforms": ["web"],
+          "platforms": ["web", "android", "ios"],
           "grades": "2-5",
           "dateAdded": "2015-11-15",
           "titleImage": "lightbot-title.jpg",
@@ -70,6 +70,17 @@ angular.module("app").factory("gamesRepository", [function() {
           "screenshots": []
         }
       ];
+
+      // Sort by date added, reverse-chronologically
+      return toReturn.sort(function(a, b) {
+        if (a.dateAdded != b.dateAdded) {
+          // return newest-added first
+          return Date.parse(b.dateAdded) - Date.parse(a.dateAdded);
+        } else {
+          // If tied, return alphabetically
+          return a.name.localeCompare(b.name);
+        }
+      });
     }
   }
 }]);

@@ -27,7 +27,7 @@
             <li role="presentation" ng-class='{active: currentTab == "about"}'><a href="#" ng-click="currentTab = 'about'">About</a></li>
           </ul>
         </nav>
-        <h3 class="text-muted">Project name {{selectedGame.name}}</h3>
+        <h3 class="text-muted">Project name</h3>
       </div>
 
       <div id="homeTab" ng-show="currentTab == 'home'">
@@ -53,10 +53,20 @@
             </div>
           </div>
         </div>
+
         <div ng-show="selectedGame != null">
-          {{selectedGame.name}}
-          <a href="#" ng-click="selectedGame = null">cancel</a>
+          <!-- TODO: add bootstrap markup -->
+          <h1>{{selectedGame.name}}</h1>
+          <p>{{selectedGame.description}}</p>
+          <p>URL: <a href="{{selectedGame.url}}">{{selectedGame.url}}</a>
+          <p>Platforms:
+            <ul>
+              <li ng-repeat="platform in selectedGame.platforms">{{platform}}</li>
+            </ul>
+          <p>For grade(s) {{selectedGame.grades}}</p>
+          <p>[<a href="#" ng-click="controller.selectNone()">Back</a>]</p>
         </div>
+
       </div>
 
       <div ng-show="currentTab == 'about'">
