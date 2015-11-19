@@ -5,7 +5,7 @@ angular.module("app").factory("gamesRepository", [function() {
     getData: function() {
       var toReturn = [
         {
-          "name": "Argubot Academy EDU",
+          "name": "Argubot Academy",
           "description": "Decide how to build a futuristic city on mars, based on claims and evidence for each choice. Teaches how to match evidences to claims, identifying, evaluating, and critiquing arguments.",
           "url": "https://www.glasslabgames.org/games/AA-1",
           "grades": "6-9",

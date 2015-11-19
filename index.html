@@ -49,6 +49,7 @@
         <div ng-show="selectedGame == null">
           <div class="jumbotron">
             <h1 ng-click="controller.selectGame(games[0])">{{games[0].name}}</h1>
+            <img ng-src="images/{{games[0].titleImage}}" width="540" height="333" ng-click="controller.selectGame(games[0])" />
             <p class="lead">{{games[0].description}} [<a href="#" ng-click="controller.selectGame(games[0])">Details</a>]</p>
           </div>
 
@@ -56,6 +57,7 @@
             <div class="col-lg-6">
               <div ng-repeat="game in games | filter: colFilter(0)">
                 <h4 ng-click="controller.selectGame(game)">{{game.name}}</h4>
+                <img ng-src="images/{{game.titleImage}}" width="270" height="167" />
                 <p>{{game.description}} [<a href="#" ng-click="controller.selectGame(game)">Details</a>]</h4></p>
               </div>
             </div>
@@ -63,6 +65,7 @@
             <div class="col-lg-6">
               <div ng-repeat="game in games | filter: colFilter(1)">
                 <h4 ng-click="controller.selectGame(game)">{{game.name}}</h4>
+                <img ng-src="images/{{game.titleImage}}" width="270" height="167" ng-click="controller.selectGame(game)" />
                 <p>{{game.description}} [<a href="#" ng-click="controller.selectGame(game)">Details</a>]</h4></p>
               </div>
             </div>
