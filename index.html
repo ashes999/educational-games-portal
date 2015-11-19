@@ -57,7 +57,7 @@
             <div class="col-lg-6">
               <div ng-repeat="game in games | filter: colFilter(0)">
                 <h4 ng-click="controller.selectGame(game)">{{game.name}}</h4>
-                <img ng-src="images/{{game.titleImage}}" width="270" height="167" />
+                <img ng-src="images/{{game.titleImage}}" width="270" height="167" ng-click="controller.selectGame(game)"/>
                 <p>{{game.description}} [<a href="#" ng-click="controller.selectGame(game)">Details</a>]</h4></p>
               </div>
             </div>
