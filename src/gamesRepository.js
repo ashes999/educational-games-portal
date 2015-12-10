@@ -13,7 +13,8 @@ angular.module("app").factory("gamesRepository", [function() {
           "educatorsGuide": "https://s3-us-west-1.amazonaws.com/playfully-games/AA-1/brochures/AAEDU+brochure.pdf",
           "dateAdded": "2015-11-15",
           "titleImage": "argubot-academy-title.jpg",
-          "screenshots": []
+          "screenshots": [],
+          "videos": ["https://vimeo.com/105931525"]
         },
         {
           "name": "Digital Compass",
