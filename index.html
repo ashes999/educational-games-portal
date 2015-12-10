@@ -89,12 +89,13 @@
 
           <h2>Description</h2>
           <p>{{selectedGame.description}}</p>
-          <p>URL: <a href="{{selectedGame.url}}">{{selectedGame.url}}</a></p>
-          <p>Platforms:
+          <p><strong>URL:</strong> <a href="{{selectedGame.url}}">{{selectedGame.url}}</a></p>
+          <p><strong>Educator's Guide:</strong> <a href="{{selectedGame.educatorsGuide}}">{{selectedGame.educatorsGuide}}</a></p>
+          <p><strong>Platforms:</strong>
             <ul>
               <li ng-repeat="platform in selectedGame.platforms | orderBy: platform">{{platform}}</li>
             </ul>
-          <p>For grade(s) {{selectedGame.grades}}</p>
+          <p><strong>Suitable for grades:</strong> {{selectedGame.grades}}</p>
           <p>[<a href="#" ng-click="controller.selectNone()">Back</a>]</p>
         </div>
 
