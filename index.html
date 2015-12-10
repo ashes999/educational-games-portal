@@ -78,14 +78,30 @@
 
           <h2><a href="{{selectedGame.url}}">Play Now</a></h2>
 
-          <div class="row"><div class="col-lg-12">
-            <p>Click on an image to view a bigger version</p>
-            <img
-              class="img-responsive"
-              ng-repeat="screenshot in selectedGame.screenshots.concat(selectedGame.titleImage)"
-              ng-src="images/{{screenshot}}" ng-click="controller.selectImage(screenshot)"
-              width="320" height="180" style="float: left;" />
-          </div></div>
+          <div ng-show="selectedGame.screenshots.length > 0">
+            <h2>Images</h2>
+            <div class="row">
+                <div class="col-lg-12">
+                <p>Click on an image to view a bigger version</p>
+                <img
+                  class="img-responsive"
+                  ng-repeat="screenshot in selectedGame.screenshots.concat(selectedGame.titleImage)"
+                  ng-src="images/{{screenshot}}" ng-click="controller.selectImage(screenshot)"
+                  width="320" height="232" style="float: left;" />
+              </div>
+            </div>
+          </div>
+
+          <div ng-show="selectedGame.videos.length > 0">
+            <h2>Videos</h2>
+            <div class="row">
+                <div class="col-lg-12">
+                <ul>
+                  <li ng-repeat="video in selectedGame.videos"><a href="{{video}}">Video {{$index + 1}}</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
           <h2>Description</h2>
           <p>{{selectedGame.description}}</p>
