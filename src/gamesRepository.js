@@ -48,6 +48,17 @@ angular.module("app").factory("gamesRepository", [function() {
           "screenshots": ['lightbot/screenshot-1.png', 'lightbot/screenshot-2.jpg']
         },
         {
+          "name": "Lure of the Labyrinth",
+          "description": "Lure of the Labyrinth casts you in a strange world filled with monsters on a quest to save your pet. It teaches pre-algebra math to middle-schoolers.",
+          "url": "https://labyrinth.thinkport.org/www/",
+          "platforms": ["web"],
+          "grades": "6-8",
+          "educatorsGuide": "https://labyrinth.thinkport.org/www/educators/resources/video.php",
+          "dateAdded": "2015-12-10",
+          "titleImage": "lure-of-the-labyrinth-title.jpg",
+          "screenshots": ['lure-of-the-labyrinth/lotl-1.jpg', 'lure-of-the-labyrinth/lotl-2.jpg', 'lure-of-the-labyrinth/lotl-3.png']
+        },
+        {
           "name": "Moonbase Alpha",
           "description": "A 3d game by NASA about building and sustaining a base on the moon. Focuses on STEM concepts like energy, gravity, and engineering.",
           "url": "http://www.nasa.gov/offices/education/programs/national/ltp/games/moonbasealpha/index.html",

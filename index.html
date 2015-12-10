@@ -84,14 +84,14 @@
               class="img-responsive"
               ng-repeat="screenshot in selectedGame.screenshots.concat(selectedGame.titleImage)"
               ng-src="images/{{screenshot}}" ng-click="controller.selectImage(screenshot)"
-              width="320" height="180" />
+              width="320" height="180" style="float: left;" />
           </div></div>
 
           <h2>Description</h2>
           <p>{{selectedGame.description}}</p>
           <ul>
             <li><strong><a href="{{selectedGame.url}}">Game Website</a></strong></li>
-            <li><a href="{{selectedGame.educatorsGuide}}">Parents/Educators Guide</a></li>
+            <li ng-show="selectedGame.educatorsGuide != null"><a href="{{selectedGame.educatorsGuide}}">Parents/Educators Guide</a></li>
             <li>Platforms: <span ng-repeat="platform in selectedGame.platforms | orderBy: platform">{{platform}}&nbsp;</span></li>
             <li>Suitable for grades {{selectedGame.grades}}</li>
           </ul>
