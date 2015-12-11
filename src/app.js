@@ -19,8 +19,8 @@ function ($scope, repo) {
 
   this.selectImage = function(image) {
     $scope.selectedImage = image;
-    console.log("SI=" + image);
     // Closing the lightbox triggers this, but the binding never takes effect
+    // That is, the lightbox div never disappears
     if (image != null) {
       $('#lightbox').show();
     } else {
