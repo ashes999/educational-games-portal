@@ -11,9 +11,6 @@ function ($scope, repo) {
 
   this.selectGame = function(game) {
     $scope.selectedGame = game;
-    if (game != null) {
-      $scope.selectedImage = game.titleImage;
-    }
   }
 
   this.selectNone = function() {
@@ -22,6 +19,13 @@ function ($scope, repo) {
 
   this.selectImage = function(image) {
     $scope.selectedImage = image;
+    console.log("SI=" + image);
+    // Closing the lightbox triggers this, but the binding never takes effect
+    if (image != null) {
+      $('#lightbox').show();
+    } else {
+      $('#lightbox').hide();
+    }
   }
 
   this.filterGames = function() {

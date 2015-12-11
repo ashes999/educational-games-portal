@@ -8,7 +8,7 @@
       <link href="http://cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
   </head>
 
-  <body ng-controller="appController as controller">
+  <body ng-controller="appController as controller" id="appController">
     <div class="container">
       <div class="header clearfix">
         <nav>
@@ -78,6 +78,7 @@
                     class="img-responsive"
                     ng-src="images/{{screenshot}}"
                     data-featherlight="#lightbox"
+                    data-featherlight-before-close="angular.element(document.getElementById('appController')).scope().controller.selectImage(null)"
                     ng-click="controller.selectImage(screenshot)"
                     width="320" height="232" style="float: left;" />
                 </a>
@@ -123,9 +124,10 @@
           <li><a href="https://www.edx.org/course/design-development-games-learning-mitx-11-127x">Design and Development of Games for Learning</a>: building on the concepts of the above course, an overview of what education in games means and how to create awesome educational games.</li>
           <li><a href="https://www.edx.org/course/implementation-evaluation-educational-mitx-11-133x">Implementation and Evaluation of Educational Technology</a>: how to best integrate educational technology into your class or learning environment.</li>
       </ul>
-      </div>
+    </div>
 
       <div id="lightbox" ng-show="selectedImage != null">
+        <p>img: {{selectedImage}}</p>
         <img ng-src="images/{{selectedImage}}" />
       </div>
 
