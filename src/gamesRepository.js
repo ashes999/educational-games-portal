@@ -56,7 +56,7 @@ angular.module("app").factory("gamesRepository", [function() {
           "educatorsGuide": "https://labyrinth.thinkport.org/www/educators/resources/video.php",
           "dateAdded": "2015-12-10",
           "titleImage": "lure-of-the-labyrinth-title.jpg",
-          "screenshots": ['lure-of-the-labyrinth/lotl-1.jpg', 'lure-of-the-labyrinth/lotl-2.jpg', 'lure-of-the-labyrinth/lotl-3.png'],
+          "screenshots": ['lure-of-the-labyrinth/lotl-1.jpg', 'lure-of-the-labyrinth/lotl-2.jpg', 'lure-of-the-labyrinth/lotl-3.jpg', 'lure-of-the-labyrinth/lotl-4.jpg'],
           "videos": [
             {"image": "lure-of-the-labyrinth/video-1.jpg", "url": "https://www.youtube.com/watch?v=SXN9M4hFV8M"}
           ]
