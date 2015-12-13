@@ -12,9 +12,11 @@ angular.module("app").factory("gamesRepository", [function() {
           "platforms": ["iPhone"],
           "educatorsGuide": "https://s3-us-west-1.amazonaws.com/playfully-games/AA-1/brochures/AAEDU+brochure.pdf",
           "dateAdded": "2015-11-15",
-          "titleImage": "argubot-academy-title.jpg",
-          "screenshots": [],
-          "videos": ["https://vimeo.com/105931525"]
+          "titleImage": "argubot-academy/title.jpg",
+          "screenshots": ["argubot-academy/combat-1.jpg", "argubot-academy/map-1.jpg", "argubot-academy/bot-1.jpg", "argubot-academy/construction.jpg"],
+          "videos": [
+            { "image": "argubot-academy/video-youtube.jpg", "url": "https://www.youtube.com/watch?v=WkvLx8PYxtQ" }
+          ]
         },
         {
           "name": "Digital Compass",
@@ -55,7 +57,7 @@ angular.module("app").factory("gamesRepository", [function() {
           "grades": "6-8",
           "educatorsGuide": "https://labyrinth.thinkport.org/www/educators/resources/video.php",
           "dateAdded": "2015-12-10",
-          "titleImage": "lure-of-the-labyrinth-title.jpg",
+          "titleImage": "lure-of-the-labyrinth/title.jpg",
           "screenshots": ['lure-of-the-labyrinth/lotl-1.jpg', 'lure-of-the-labyrinth/lotl-2.jpg', 'lure-of-the-labyrinth/lotl-3.jpg', 'lure-of-the-labyrinth/lotl-4.jpg'],
           "videos": [
             {"image": "lure-of-the-labyrinth/video-1.jpg", "url": "https://www.youtube.com/watch?v=SXN9M4hFV8M"}
