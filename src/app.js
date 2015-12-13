@@ -82,3 +82,15 @@ function ($scope, repo) {
   }
 
 }]);
+
+// scrollup directive
+app.directive('scrollup', function ($document) {
+        return {
+            restrict: "AEC",
+            link: function (scope, element, attrs) {
+                element.bind("click", function () {
+                  window.scrollTo(0, 0);
+                });
+            }
+        };
+});
