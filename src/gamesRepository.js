@@ -26,8 +26,8 @@ angular.module("app").factory("gamesRepository", [function() {
           "platforms": ["web", "ios", "android"],
           "educatorsGuide": "https://d2e111jq13me73.cloudfront.net/sites/default/files/uploads/landing_pages/educator_guide_093015.pdf",
           "dateAdded": "2015-11-15",
-          "titleImage": "digital-compass-title.jpg",
-          "screenshots": []
+          "titleImage": "digital-compass/title.jpg",
+          "screenshots": ["digital-compass/chop.jpg", "digital-compass/choose-scenario-1.jpg", "digital-compass/story.jpg", "digital-compass/pick-choice.jpg"]
         },
         {
 	        "name": "Gamestar Mechanic",
