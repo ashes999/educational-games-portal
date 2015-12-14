@@ -91,8 +91,12 @@ angular.module("app").factory("gamesRepository", [function() {
           "platforms": ["web"],
           "trailer": "https://www.youtube.com/watch?v=YmB7HZzaGWs",
           "dateAdded": "2015-11-15",
-          "titleImage": "ratio-rancher-title.jpg",
-          "screenshots": []
+          "titleImage": "ratio-rancher/title.jpg",
+          "educatorsGuide": "http://about.glasslabgames.org/wp-content/uploads/2015/06/Ratio-Rancher-Field-Study-Results.pdf",
+          "screenshots": ["ratio-rancher/quest.jpg", "ratio-rancher/screenshot-1.jpg", "ratio-rancher/creature-1.jpg", "ratio-rancher/screenshot-2.jpg"],
+          "videos": [
+            { "image": "ratio-rancher/video.jpg", "url": "https://www.youtube.com/watch?v=YmB7HZzaGWs" }
+          ]
         }
       ];
 
