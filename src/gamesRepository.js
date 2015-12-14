@@ -50,8 +50,9 @@ angular.module("app").factory("gamesRepository", [function() {
           "platforms": ["web", "android", "ios"],
           "grades": "2-5",
           "dateAdded": "2015-11-15",
-          "titleImage": "lightbot-title.jpg",
-          "screenshots": ['lightbot/screenshot-1.png', 'lightbot/screenshot-2.jpg']
+          "titleImage": "lightbot/title.jpg",
+          "educatorsGuide": "http://lightbot.com/resources.html",
+          "screenshots": ['lightbot/intro.jpg', 'lightbot/screenshot-2.jpg', 'lightbot/screenshot-1.jpg', 'lightbot/screenshot-3.jpg']
         },
         {
           "name": "Lure of the Labyrinth",
