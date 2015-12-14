@@ -36,8 +36,12 @@ angular.module("app").factory("gamesRepository", [function() {
           "platforms": ["web"],
           "grades": "2-5",
           "dateAdded": "2015-11-15",
-          "titleImage": "gamestar-mechanic-title.jpg",
-          "screenshots": []
+          "educatorsGuide": "https://gamestarmechanic.com/teachers/what_is_gamestar",
+          "titleImage": "gamestar-mechanic/title.jpg",
+          "screenshots": ["gamestar-mechanic/making-game.jpg", "gamestar-mechanic/promo-1.jpg", "gamestar-mechanic/story-1.jpg", "gamestar-mechanic/game-1.jpg"],
+          "videos": [{
+            "url": "https://www.youtube.com/watch?v=ac_jfJzcb0U", "image": "gamestar-mechanic/video-1.jpg"
+          }]
         },
         {
           "name": "Lightbot",
