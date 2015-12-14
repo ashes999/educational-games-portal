@@ -77,8 +77,11 @@ angular.module("app").factory("gamesRepository", [function() {
           "educatorsGuide": "http://www.nasa.gov/pdf/526940main_Moonbase_Alpha_Educator_Guide_v1.pdf",
           "trailer": "https://www.youtube.com/watch?v=nis2t9EubBs",
           "dateAdded": "2015-11-15",
-          "titleImage": "moonbase-alpha-title.jpg",
-          "screenshots": []
+          "titleImage": "moonbase-alpha/title.jpg",
+          "screenshots": ["moonbase-alpha/screenshot-1.jpg", "moonbase-alpha/screenshot-2.jpg", "moonbase-alpha/screenshot-3.jpg", "moonbase-alpha/screenshot-4.jpg"],
+          "videos": [
+            { "image": "moonbase-alpha/video.jpg", "url": "http://cdn.akamai.steamstatic.com/steam/apps/5802/movie480.webm?t=1278458032"}
+          ]
         },
         {
           "name": "Ratio Rancher",
