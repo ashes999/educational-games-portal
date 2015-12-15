@@ -118,6 +118,7 @@
             <li ng-show="selectedGame.educatorsGuide != null"><a href="{{selectedGame.educatorsGuide}}">Parents/Educators Guide</a></li>
             <li>Platforms: <span ng-repeat="platform in selectedGame.platforms | orderBy: platform">{{platform}}&nbsp;</span></li>
             <li>Suitable for grades {{selectedGame.grades}}</li>
+            <li><a href="#?g={{selectedGame.name}}">Link to this page</a></li>
           </ul>
           <p>[<a href="#" ng-click="controller.selectNone()">Back</a>]</p>
         </div>

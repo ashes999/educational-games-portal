@@ -1,13 +1,25 @@
 'use strict';
 
-angular.module('app').controller('appController', ['$scope', 'gamesRepository',
-function ($scope, repo) {
+angular.module('app').controller('appController', ['$scope', '$location', 'gamesRepository',
+function ($scope, $location, repo) {
+
   $scope.currentTab = 'home';
   var allGames = repo.getData();
 
   $scope.allGames = allGames;
   $scope.games = allGames;
-  $scope.platforms = ['all', 'web', 'ios', 'android', 'windows']
+  $scope.platforms = ['all', 'web', 'ios', 'android', 'windows'];
+
+  if (typeof($location.search().g) !== 'undefined') {
+    var linkedGame = $location.search().g;
+    for (var i = 0; i < allGames.length; i++) {
+      var game = allGames[i];
+      if (game.name.toUpperCase() == linkedGame.toUpperCase()) {
+        $scope.selectedGame = game;
+        break;
+      }
+    }
+  }
 
   this.selectGame = function(game) {
     $scope.selectedGame = game;
