@@ -1,5 +1,7 @@
 'use strict';
 
+var app = angular.module('app', []);
+
 angular.module('app').controller('appController', ['$scope', '$location', 'gamesRepository',
 function ($scope, $location, repo) {
 
@@ -77,32 +79,17 @@ function ($scope, $location, repo) {
       // No filters? Not filtered out? It's legit.
       return true;
     });
-  }
-
-  // Fitler games into two columns
-  // From: http://stackoverflow.com/a/22735761/210780
-  $scope.colFilter = function(col) {
-    var count = 0;
-    // we hold onto count here, because $filter doesn't
-    // tell us the position of `val` in the array
-    return function(val) {
-        count++;
-        if ((count-1) % 2 === col) {
-            return val;
-        }
-    }
-  }
-
+  };
 }]);
 
 // scrollup directive
 app.directive('scrollup', function ($document) {
-        return {
-            restrict: "AEC",
-            link: function (scope, element, attrs) {
-                element.bind("click", function () {
-                  window.scrollTo(0, 0);
-                });
-            }
-        };
+    return {
+        restrict: "AEC",
+        link: function (scope, element, attrs) {
+            element.bind("click", function () {
+                window.scrollTo(0, 0);
+            });
+        }
+    };
 });

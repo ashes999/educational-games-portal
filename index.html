@@ -56,7 +56,7 @@
 
           <div class="row marketing">
             <div class="col-lg-6">
-              <div ng-repeat="game in games | filter: colFilter(0)">
+              <div ng-repeat="game in games | columnFilter:0">
                 <h4 scrollup ng-click="controller.selectGame(game)">{{game.name}}</h4>
                 <img scrollup class="img-responsive" ng-src="images/{{game.titleImage}}" width="225" height="200" ng-click="controller.selectGame(game)"/>
                 <p>{{game.description}} [<a href="#" scrollup ng-click="controller.selectGame(game)">Details</a>]</h4></p>
@@ -64,7 +64,7 @@
             </div>
 
             <div class="col-lg-6">
-              <div ng-repeat="game in games | filter: colFilter(1)">
+              <div ng-repeat="game in games | columnFilter:1">
                 <h4 scrollup ng-click="controller.selectGame(game)">{{game.name}}</h4>
                 <img scrollup class="img-responsive" ng-src="images/{{game.titleImage}}" width="225" height="200" ng-click="controller.selectGame(game)" />
                 <p>{{game.description}} [<a href="#" scrollup ng-click="controller.selectGame(game)">Details</a>]</h4></p>
@@ -154,12 +154,10 @@
 
     <!-- angular and app -->
     <script src="lib/angular-1.4.7.js"></script>
-    <script type='text/javascript'>
-      var app = angular.module('app', []);
-    </script>
+    
     <script src="src/app.js"></script>
     <script src="src/gamesRepository.js"></script>
-
+    <script src="src/columnFilter.js"></script>
     <script src="http://cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
   </body>
 
